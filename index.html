@@ -99,7 +99,7 @@ ul,ol{list-style:none}
 .nav-overlay.show{opacity:1;pointer-events:auto}
 
 /* ── Hero ── */
-.hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--navy);padding-top:58px}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--navy);padding-top:0}
 .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.55;animation:heroZoom 16s ease-in-out infinite alternate}
 @keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(17,28,51,.55) 0%,rgba(17,28,51,.25) 45%,rgba(17,28,51,.85) 100%)}
@@ -237,6 +237,9 @@ ul,ol{list-style:none}
   .footer{padding-bottom:40px}
   :root{--maxw:920px}
 }
+
+.top-banner{padding-top:58px;background:#fff}
+.top-banner img{display:block;width:100%;height:auto}
 </style>
 </head>
 <body>
@@ -263,6 +266,11 @@ ul,ol{list-style:none}
   <div id="mobileNavLinks"></div>
 </nav>
 <div class="nav-overlay" id="navOverlay"></div>
+
+<!-- TOP BANNER -->
+<section class="top-banner">
+  <img src="images/banner.jpg" alt="동탄 파라곤 3차 이성원 팀장 010-5605-7781">
+</section>  
 
 <!-- HERO -->
 <section class="hero" id="hero">
